@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="org.test.bukukasnusantara.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_tambahPemasukanFragment"
+            app:destination="@id/tambahPemasukanFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_pengaturanFragment"
+            app:destination="@id/pengaturanFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailCashFlowFragment"
+            app:destination="@id/detailCashFlowFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tambahPengeluaranFragment"
+            app:destination="@id/tambahPengeluaranFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tambahPemasukanFragment"
+        android:name="org.test.bukukasnusantara.fragment.TambahPemasukanFragment"
+        android:label="fragment_tambah_pemasukan"
+        tools:layout="@layout/fragment_tambah_pemasukan" >
+        <action
+            android:id="@+id/action_tambahPemasukanFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tambahPengeluaranFragment"
+        android:name="org.test.bukukasnusantara.fragment.TambahPengeluaranFragment"
+        android:label="fragment_tambah_pengeluaran"
+        tools:layout="@layout/fragment_tambah_pengeluaran" >
+        <action
+            android:id="@+id/action_tambahPengeluaranFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pengaturanFragment"
+        android:name="org.test.bukukasnusantara.fragment.PengaturanFragment"
+        android:label="fragment_pengaturan"
+        tools:layout="@layout/fragment_pengaturan" >
+        <action
+            android:id="@+id/action_pengaturanFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailCashFlowFragment"
+        android:name="org.test.bukukasnusantara.fragment.DetailCashFlowFragment"
+        android:label="fragment_detail_cash_flow"
+        tools:layout="@layout/fragment_detail_cash_flow" >
+        <action
+            android:id="@+id/action_detailCashFlowFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

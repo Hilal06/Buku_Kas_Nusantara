@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Buku Kas Nusantara</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ganti_pass"><u>Ganti Password</u></string>
+    <string name="simpan">Simpan</string>
+    <string name="kembali">Kembali</string>
+    <string name="nominal">Nominal</string>
+    <string name="keterangan">Keterangan</string>
+
+</resources>

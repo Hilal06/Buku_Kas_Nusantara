@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rangkuman Bulan Ini"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/home_pengeluaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengeluaran: Rp. 0"
+        android:textSize="20dp"
+        android:textColor="#FF0000"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/home_pemasukan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Pemasukan: Rp. 0"
+        android:textSize="20dp"
+        android:textColor="#05C50D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_pengeluaran" />
+
+    <ImageView
+        android:id="@+id/home_grafik"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/external_content_duckduckgo_com"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_pemasukan" />
+
+    <ImageButton
+        android:id="@+id/btn_home_pemasukan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/icons8_request_money_96"
+        app:layout_constraintStart_toStartOf="@+id/home_grafik"
+        app:layout_constraintTop_toBottomOf="@+id/home_grafik" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Tambah Pemasukan"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btn_home_pemasukan"
+        app:layout_constraintStart_toStartOf="@+id/btn_home_pemasukan"
+        app:layout_constraintTop_toBottomOf="@+id/btn_home_pemasukan" />
+
+    <ImageButton
+        android:id="@+id/btn_home_pengeluaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/icons8_initiate_money_transfer_96"
+        app:layout_constraintEnd_toEndOf="@+id/home_grafik"
+        app:layout_constraintTop_toBottomOf="@+id/home_grafik" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Tambah Pengeluaran"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btn_home_pengeluaran"
+        app:layout_constraintStart_toStartOf="@+id/btn_home_pengeluaran"
+        app:layout_constraintTop_toBottomOf="@+id/btn_home_pengeluaran" />
+
+    <ImageButton
+        android:id="@+id/btn_home_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_baseline_library_books_24"
+        android:tint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/btn_home_pemasukan"
+        app:layout_constraintTop_toBottomOf="@+id/btn_home_pemasukan" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Detail Cash Flow"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btn_home_detail"
+        app:layout_constraintStart_toStartOf="@+id/btn_home_detail"
+        app:layout_constraintTop_toBottomOf="@+id/btn_home_detail" />
+
+    <ImageButton
+        android:id="@+id/btn_home_pengaturan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_baseline_settings_24"
+        android:tint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btn_home_pengeluaran"
+        app:layout_constraintTop_toBottomOf="@+id/btn_home_pengeluaran" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Pengaturan"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btn_home_pengaturan"
+        app:layout_constraintStart_toStartOf="@+id/btn_home_pengaturan"
+        app:layout_constraintTop_toBottomOf="@+id/btn_home_pengaturan" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
